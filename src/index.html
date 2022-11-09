@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Test</title>
+  </head>
+  <body>
+    <header class="header content-wrapper">
+      <div class="header__logo"></div>
+      <div class="header__content">
+        <a class="header__phone phone-link link" href="#">
+          8 (495) 127-82-80
+        </a>
+        <div class="header__personal-account">
+          <button class="header__write-btn" type="button">Напишите нам</button>
+          <button class="header__personal-account-btn" type="button">
+            Личный кабинет
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav class="main-nav">
+      <div class="content-wrapper">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#" class="nav-item__link link">Доставка топлива</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item__link nav-item__link_sub link"
+              >Топливные карты</a
+            >
+            <span class="nav-item__arrow"></span>
+            <ul class="nav-item__submenu">
+              <li class="submenu-item">
+                <a href="#" class="submenu-item__link link">ddddd</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-item__link link">dddddddd</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-item__link link">ddddddddddddddd</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-item__link link"
+                  >dddddddddddddddddd</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item__link nav-item__link_sub link">АЗС</a>
+            <span class="nav-item__arrow"></span>
+            <ul class="nav-item__submenu">
+              <li class="submenu-item">
+                <a href="#" class="submenu-item__link link">ddddd</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-item__link link">dddddddd</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-item__link link">ddddddddddddddd</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-item__link link"
+                  >dddddddddddddddddd</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item__link link">Цены на топливо</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item__link nav-item__link_sub link"
+              >О компании</a
+            >
+            <span class="nav-item__arrow"></span>
+            <ul class="nav-item__submenu">
+              <li class="submenu-item">
+                <a href="#" class="submenu-item__link link">ddddd</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-item__link link">dddddddd</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-item__link link">ddddddddddddddd</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#" class="submenu-item__link link"
+                  >dddddddddddddddddd</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item__link link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="delivery content-wrapper">
+      <h1 class="delivery__title h1-title">Доставка топлива</h1>
+      <div class="delivery-form">
+        <h2 class="delivery-form__title h2-title">
+          Быстрый <span class="h2-title__blue">заказ топлива</span>
+        </h2>
+        <form action="userdata" class="delivery-form__data" method="post">
+          <div class="delivery-form__userdata">
+            <div class="delivery-form__dataitem">
+              <label for="username" class="dataitem__label">Ваше имя</label>
+              <input
+                type="text"
+                placeholder="Иван"
+                id="username"
+                class="dataitem__input"
+              />
+            </div>
+            <div class="delivery-form__dataitem">
+              <label for="userphone" class="dataitem__label"
+                >Номер телефона</label
+              >
+              <input
+                type="text"
+                placeholder="+7 (___)___ __ __"
+                id="userphone"
+                class="dataitem__input"
+              />
+            </div>
+            <button type="submit" class="delivery-form__btn">
+              Заказать топливо
+            </button>
+          </div>
+        </form>
+        <form
+          action="user-agreement"
+          class="delivery-form__agreement"
+          method="post"
+        >
+          <input type="checkbox" class="agreement__input" checked />
+          <label for="agreement" class="agreement__label"
+            >Я согласен с условиями обработки данных</label
+          >
+        </form>
+      </div>
+    </section>
+    <section class="price-section content-wrapper">
+      <h2 class="price__title h2-title">Стоимость топлива</h2>
+      <div class="price-table">
+        <div class="head-item head-item_1">Сорт топлива</div>
+        <div class="head-item head-item_2">Экологический класс</div>
+        <div class="head-item head-item_3">Производитель</div>
+        <div class="head-item head-item_4">Наличный расчет</div>
+        <div class="head-item head-item_5">Безналичный расчет</div>
+        <div class="price-table__empty price-table__empty_1"></div>
+        <div class="price-table__empty price-table__empty_2"></div>
+        <div class="price-table__oil-type price-table__oil-type_dt">ДТ</div>
+        <div class="price-table__oil-type price-table__oil-type_95">АИ-95</div>
+        <div class="oil_eco-class dt-item_euro5">ЕВРО-5</div>
+        <div class="oil_eco-class dt-item_euro4">ЕВРО-4</div>
+        <div class="oil_eco-class oil-item_euro5">ЕВРО-5</div>
+        <div class="oil_eco-class oil-item_euro4">ЕВРО-4</div>
+        <div class="oil_eco-class oil-item_euro3">ЕВРО-3</div>
+
+        <div class="oil__prod oil__prod dt-euro5_prod_1">Газпромнефть</div>
+        <div class="oil__prod dt-euro5_prod_2">Лукоил</div>
+        <div class="oil__prod dt-euro5_prod_3">Роснефть</div>
+        <div class="oil__prod dt-euro4_prod_1">Газпромнефть</div>
+        <div class="oil__prod dt-euro4_prod_2">Лукоил</div>
+        <div class="oil__prod oil-euro5_prod_1">Газпромнефть</div>
+        <div class="oil__prod oil-euro5_prod_3">Роснефть</div>
+        <div class="oil__prod oil-euro5_prod_2">Лукоил</div>
+        <div class="oil__prod oil-euro4_prod_1">Лукоил</div>
+        <div class="oil__prod oil-euro4_prod_2">Газпромнефть</div>
+        <div class="oil__prod oil-euro3_prod_1">Роснефть</div>
+        <div class="oil__prod oil-euro3_prod_2">Газпромнефть</div>
+        <div class="oil__prod oil-euro3_prod_3">Лукоил</div>
+
+        <div class="oil__price_1 dt-euro5_prod_1_price_1">45.43 р.</div>
+        <div class="oil__price_1 dt-euro5_prod_2_price_1">45.16 р.</div>
+        <div class="oil__price_1 dt-euro5_prod_3_price_1">42.34 р.</div>
+        <div class="oil__price_1 dt-euro4_prod_1_price_1">-</div>
+        <div class="oil__price_1 dt-euro4_prod_2_price_1">41.16 р.</div>
+        <div class="oil__price_1 oil-euro5_prod_1_price_1">45.43 р.</div>
+        <div class="oil__price_1 oil-euro5_prod_3_price_1">42.34 р.</div>
+        <div class="oil__price_1 oil-euro5_prod_2_price_1">45.16 р.</div>
+        <div class="oil__price_1 oil-euro4_prod_1_price_1">41.16 р.</div>
+        <div class="oil__price_1 oil-euro4_prod_2_price_1">-</div>
+        <div class="oil__price_1 oil-euro3_prod_1_price_1">42.34 р.</div>
+        <div class="oil__price_1 oil-euro3_prod_2_price_1">-</div>
+        <div class="oil__price_1 oil-euro3_prod_3_price_1">45.16 р.</div>
+        <div class="oil__price_2 dt-euro5_prod_1_price_2">44.43 р.</div>
+        <div class="oil__price_2 dt-euro5_prod_2_price_2">43.98 р.</div>
+        <div class="oil__price_2 dt-euro5_prod_3_price_2">41.64 р.</div>
+        <div class="oil__price_2 dt-euro4_prod_1_price_2">-</div>
+        <div class="oil__price_2 dt-euro4_prod_2_price_2">40.67 р.</div>
+        <div class="oil__price_2 oil-euro5_prod_1_price_2">44.43 р.</div>
+        <div class="oil__price_2 oil-euro5_prod_3_price_2">41.64 р.</div>
+        <div class="oil__price_2 oil-euro5_prod_2_price_2">43.98 р.</div>
+        <div class="oil__price_2 oil-euro4_prod_1_price_2">40.67 р.</div>
+        <div class="oil__price_2 oil-euro4_prod_2_price_2">-</div>
+        <div class="oil__price_2 oil-euro3_prod_1_price_2">41.64 р.</div>
+        <div class="oil__price_2 oil-euro3_prod_2_price_2">-</div>
+        <div class="oil__price_2 oil-euro3_prod_3_price_2">43.98 р.</div>
+      </div>
+    </section>
+    <section class="delivery-calc-section">
+      <div class="content-wrapper">
+        <h2 class="delivery-calc__title h2-title">Топливо с доставкой</h2>
+        <div class="delivery-calc">
+          <form action="delivery-calc-form" name="delivery-calc-form" method="post" class="delivery-calc-form">
+            <div class="delivery-form__dataitem">
+              <label for="oil-type" class="dataitem__label">Вид топлива</label>
+              <select name="oil-type" id="oil-type" class="oil-type__select">
+                <option value="ДТ">ДТ</option>
+                <option value="АИ-95">АИ-95</option>
+              </select>
+            </div>
+            <div class="delivery-form__dataitem">
+              <label for="oil-volume" class="dataitem__label">Объем топлива</label>
+              <div class="select-volume__block">
+                <div class="select-volume">
+                  <span class="volume">0</span> л.
+                </div>
+                <input type="range" step="10" min="0" max="5000" class="select-volume__range"/>
+              </div>
+            </div>
+            <div class="delivery-form__dataitem">
+              <label for="delivery-place" class="dataitem__label"
+                >Место доставки</label
+              >
+              <input
+                class="dataitem__input"
+                type="text"
+                id="delivery-place"
+                placeholder="Укажите место"
+              />
+            </div>
+            <div class="delivery-form__dataitem">
+              <label for="username" class="dataitem__label">Ваше имя</label>
+              <input
+                type="text"
+                placeholder="Иван"
+                id="username"
+                class="dataitem__input"
+              />
+            </div>
+            <div class="delivery-form__dataitem">
+              <label for="userphone" class="dataitem__label"
+                >Номер телефона</label
+              >
+              <input
+                type="text"
+                placeholder="+7 (___)___ __ __"
+                id="userphone"
+                class="dataitem__input"
+              />
+            </div>
+          </form>
+          <div class="delivery-data">
+            <h3 class="h3-title">Итого</h3>
+            <div class="delivery-data__table">
+              <div class="delivery-data__item">
+                <div class="delivery-data__content delivery-data__title">Стоимость топлива</div>
+                <div
+                  class="delivery-data__amount delivery-data__amount_full"
+                ></div>
+              </div>
+              <div class="delivery-data__item">
+                <div class="delivery-data__content">
+                  <div class="delivery-data__title">Цена за литр:</div>
+                  <div class="delivery-data__text">
+                    Цена и стоимость указаны ориентировочно. <br>Точные цену и
+                    стоимость собщит наш менеджер при подтверждении заявки.
+                  </div>
+                </div>
+                <div
+                  class="delivery-data__amount delivery-data__amount_per_unit"
+                ></div>
+              </div>
+              <div class="delivery-data__item">
+                <div class="delivery-data__content">
+                  <div class="delivery-data__title">Выгода:</div>
+                  <div class="delivery-data__text">
+                    При цене на АЗС  49.59 ₽  за литр, цены актуальны на  23.11.2020 г.
+                  </div>
+                </div>
+                <div
+                  class="delivery-data__amount delivery-data__amount_profit"
+                ></div>
+              </div>
+              <button type="submit" class="delivery-form__btn">
+                Заказать топливо
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

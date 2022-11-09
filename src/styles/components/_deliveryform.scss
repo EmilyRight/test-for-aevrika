@@ -1,0 +1,89 @@
+@import "../abstracts/mixins";
+.delivery {
+  padding-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    padding-bottom: 4.8rem;
+  }
+}
+
+.delivery-form {
+  display: flex;
+  flex-direction: column;
+  padding: 4.9rem 9.6rem 4.3rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  &__title {
+    @include h2;
+    padding-bottom: 3rem;
+  }
+  .h2-title__blue {
+    color: $color-light-blue;
+  }
+
+  // .deliver-form__data
+
+  &__data {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3.3rem;
+  }
+
+  // .deliver-form__userdata
+
+  &__userdata {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+  }
+
+  // .deliver-form__dataitem
+
+  &__dataitem {
+    display: flex;
+    flex-direction: column;
+    width: 19vw;
+    max-width: 38%;
+  }
+}
+.dataitem__label {
+  padding-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+.dataitem__input {
+  padding: 1rem 1.5rem 1.5rem;
+}
+.delivery-form__btn {
+  @include btn(25.8rem);
+  padding-left: 6.7rem;
+  padding-right: 6.7rem;
+  align-self: flex-end;
+}
+.delivery-form {
+  &__agreement {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+}
+.agreement {
+  &__input {
+    width: 24px;
+    height: 24px;
+    color: black;
+    font-weight: 100;
+    background-color: none;
+    &:checked {
+      background-color: white;
+    }
+  }
+
+  // .agreement__label
+
+  &__label {
+    font-size: 1.4rem;
+  }
+}
+

@@ -1,0 +1,206 @@
+@import "../abstracts/mixins";
+@import "../abstracts/vars";
+.price-section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.price__title {
+  padding-bottom: 4.7rem;
+}
+.price-table {
+  display: grid;
+  grid-template-columns: repeat(1fr, 5);
+  grid-template-rows: repeat(1fr, 16);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.head-item {
+  background-color: $color-dark-blue;
+  padding: 1.9rem 0 2.1rem 3rem ;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+
+.price-table__empty {
+  height: 1.8rem;
+  grid-column: 1/6;
+}
+.price-table__empty_1 {
+  grid-row: 2/3;
+}
+.price-table__empty_2 {
+  grid-row: 8/9;
+}
+.price-table__oil-type {
+  background-color: $color-light-blue;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: white;
+  padding: 1.6rem 0 1.9rem 2rem;
+}
+.price-table__oil-type_dt {
+  grid-column: 1/2;
+  grid-row: 3/8;
+}
+.price-table__oil-type_95 {
+  grid-column: 1/2;
+  grid-row: 9/17;
+}
+.oil_eco-class {
+  grid-column: 2/3;
+  padding: 1.6rem 3rem;
+  border: 0.5px solid #E7E7E7;
+
+}
+.dt-item_euro5 {
+  grid-row: 3/6;
+
+}
+.dt-item_euro4 {
+  grid-row: 6/8;
+}
+.oil-item_euro5 {
+  grid-row: 9/12;
+}
+.oil-item_euro4 {
+  grid-row: 12/14;
+}
+.oil-item_euro3 {
+  grid-row: 14/17;
+}
+.oil__prod {
+  grid-column: 3/4;
+  padding: 1.55rem 1rem 1.55rem 16%;
+  border: 0.5px solid #E7E7E7;
+}
+.dt-euro5_prod_1 {
+  grid-row: 3/4;
+}
+.dt-euro5_prod_2 {
+  grid-row: 4/5;
+}
+.dt-euro5_prod_3 {
+  grid-row: 5/6;
+}
+.dt-euro4_prod_1 {
+  grid-row: 6/7;
+}
+.dt-euro4_prod_2 {
+  grid-row: 7/8;
+}
+.oil-euro5_prod_1 {
+  grid-row: 9/10;
+}
+.oil-euro5_prod_3 {
+  grid-row: 10/11;
+}
+.oil-euro5_prod_2 {
+  grid-row: 11/12;
+}
+.oil-euro4_prod_1 {
+  grid-row: 12/13;
+}
+.oil-euro4_prod_2 {
+  grid-row: 13/14;
+}
+.oil-euro3_prod_1 {
+  grid-row: 14/15;
+}
+.oil-euro3_prod_2 {
+  grid-row: 15/16;
+}
+.oil-euro3_prod_3 {
+  grid-row: 16/17;
+}
+.oil__price_1 {
+  grid-column: 4/5;
+  padding: 1.55rem 1rem 1.55rem 16%;
+  border: 0.5px solid #E7E7E7;
+}
+.dt-euro5_prod_1_price_1 {
+  grid-row: 3/4;
+}
+.dt-euro5_prod_2_price_1 {
+  grid-row: 4/5;
+}
+.dt-euro5_prod_3_price_1 {
+  grid-row: 5/6;
+}
+.dt-euro4_prod_1_price_1 {
+  grid-row: 6/7;
+}
+.dt-euro4_prod_2_price_1 {
+  grid-row: 7/8;
+}
+.oil-euro5_prod_1_price_1 {
+  grid-row: 9/10;
+}
+.oil-euro5_prod_3_price_1 {
+  grid-row: 10/11;
+}
+.oil-euro5_prod_2_price_1 {
+  grid-row: 11/12;
+}
+.oil-euro4_prod_1_price_1 {
+  grid-row: 12/13;
+}
+.oil-euro4_prod_2_price_1 {
+  grid-row: 13/14;
+}
+.oil-euro3_prod_1_price_1 {
+  grid-row: 14/15;
+}
+.oil-euro3_prod_2_price_1 {
+  grid-row: 15/16;
+}
+.oil-euro3_prod_3_price_1 {
+  grid-row: 16/17;
+}
+.oil__price_2 {
+  grid-column: 5/6;
+  padding: 1.55rem 1rem 1.55rem 16%;
+  border: 0.5px solid #E7E7E7;
+}
+
+.dt-euro5_prod_1_price_2 {
+  grid-row: 3/4;
+}
+.dt-euro5_prod_2_price_2 {
+  grid-row: 4/5;
+}
+.dt-euro5_prod_3_price_2 {
+  grid-row: 5/6;
+}
+.dt-euro4_prod_1_price_2 {
+  grid-row: 6/7;
+}
+.dt-euro4_prod_2_price_2 {
+  grid-row: 7/8;
+}
+.oil-euro5_prod_1_price_2 {
+  grid-row: 9/10;
+}
+.oil-euro5_prod_3_price_2 {
+  grid-row: 10/11;
+}
+.oil-euro5_prod_2_price_2 {
+  grid-row: 11/12;
+}
+.oil-euro4_prod_1_price_2 {
+  grid-row: 12/13;
+}
+.oil-euro4_prod_2_price_2 {
+  grid-row: 13/14;
+}
+.oil-euro3_prod_1_price_2 {
+  grid-row: 14/15;
+}
+.oil-euro3_prod_2_price_2 {
+  grid-row: 15/16;
+}
+.oil-euro3_prod_3_price_2 {
+  grid-row: 16/17;
+}

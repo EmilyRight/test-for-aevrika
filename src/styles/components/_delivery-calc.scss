@@ -1,0 +1,160 @@
+@import "../abstracts/_vars";
+@import "../abstracts/mixins";
+
+.delivery-calc-section {
+  background-color: $color-main-background;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.delivery-calc {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.delivery-calc__title {
+  padding-bottom: 3.2rem;
+}
+.delivery-calc-form {
+  width: 28.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  .dataitem__label {
+    width: 28.5vw;
+  }
+  .dataitem__input {
+    width: 28.4vw;
+  }
+}
+.oil-type__select {
+  display: block;
+  width: 28.5vw;
+  padding: 1.4rem 5rem 1.6rem 1.2rem;
+  option {
+    max-width: 28.4vw;
+  }
+}
+.select-volume__block {
+  display: block;
+  width: 28.5vw;
+  position: relative;
+}
+.select-volume {
+  width: 28.4vw;
+  border: 1px solid #d4d4d4;
+  background-color: white;
+  font-size: 1.2rem;
+  padding: 1.4rem 5rem 1.6rem 1.2rem;
+}
+input[type="range"] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin-top: calc(-1rem + 1px);
+  background: $color-light-blue;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 28.5vw;
+  height: 2px;
+  margin-top: -10px;
+  cursor: pointer;
+  background: $color-light-blue;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 28.5vw;
+  height: 2px;
+  cursor: pointer;
+  background: $color-light-blue;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+.select-volume__range {
+  width: 28.5vw;
+  position: absolute;
+  bottom: -5px;
+}
+.volume {
+  width: 28.5vw;
+}
+
+.delivery-data {
+  padding: 4rem;
+  background-color: white;
+  width: 63.8rem;
+  max-width: 60%;
+  @include box-shadow;
+}
+.h3-title {
+  @include h3;
+  padding-bottom: 1.6rem;
+}
+.delivery-data__table {
+  border-top: 1px solid #E7E7E7;
+}
+.delivery-data__item {
+  border-top: 1px solid #E7E7E7;
+  padding: 1.6rem 0 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start
+}
+.delivery-data__content {
+  @include text(1.2rem, 400);
+  max-width: 65%;
+}
+.delivery-data__title {
+  @include h4;
+}
+.delivery-data__amount {
+  @include text(1.6rem, 400);
+}
+
+.delivery-data__text {
+  padding-top: 1.2rem;
+}
+
+.delivery-data__amount_profit {
+  @include text(1.8rem, 700);
+}
